@@ -1,0 +1,132 @@
+body{
+    background-color: lightgray;
+    display: flex;
+}
+
+p{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.main__container{
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    background-color: #212112;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__container{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    /* border: 2px solid wheat; */
+    justify-content: center;
+}
+
+.grid__wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* border: 2px solid aqua; */
+    box-shadow: 0 0 15px 5px lightgray;
+    gap: 5px;
+}
+
+.symbol__wrapper{
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.symbol__wrapper:hover{
+    background-color: rgb(180, 180, 180);
+    transition: 200ms linear 0s;
+}
+.symbol__wrapper:not(:hover){
+    transition: 200ms;
+}
+
+
+.grid__symbol{
+    display: flex;
+    position: relative;
+    font-size: 96px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    z-index: 1;
+}
+
+.main__second-container{
+    display: flex;
+    width: 100vh;
+    height: 100vh;
+    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Right panel */
+
+.grid__second-container{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+}
+
+.grid__second-wrapper{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    box-shadow: 0 0 15px 5px #212112;
+    gap: 5px;
+}
+
+.grid__second-elements{
+    display: flex;
+    background-color: #212112;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.grid__second-symbol{
+    color: lightgray;
+    position: relative;
+    font-size: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    z-index: 1;
+}
+
+
+
+
+/* Toggle classes for JS 
+
+                                     остановился на этом месте => добавление анимации  на карточки FLOP => F */
+.animation__F{
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    z-index: 10;
+}
+
+/* .wrap_L{
+    visibility: hidden;
+} */
