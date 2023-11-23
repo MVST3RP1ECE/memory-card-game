@@ -24,7 +24,6 @@ p{
     display: flex;
     width: 50%;
     height: 50%;
-    /* border: 2px solid wheat; */
     justify-content: center;
 }
 
@@ -34,7 +33,6 @@ p{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* border: 2px solid aqua; */
     box-shadow: 0 0 15px 5px lightgray;
     gap: 5px;
 }
@@ -55,6 +53,10 @@ p{
 }
 .symbol__wrapper:not(:hover){
     transition: 200ms;
+}
+
+.grid__elements{
+    z-index: 1;
 }
 
 
@@ -103,6 +105,16 @@ p{
     user-select: none;
 }
 
+.grid__second-elements:hover{
+    background-color: rgb(52, 52, 52);
+    transition: 200ms linear 0s;
+}
+
+.grid__second-elements:not(:hover){
+    background-color: #212121;
+    transition: 200ms linear 0s;
+}
+
 
 .grid__second-symbol{
     color: lightgray;
@@ -119,14 +131,4 @@ p{
 /* Toggle classes for JS 
 
                                      остановился на этом месте => добавление анимации  на карточки FLOP => F */
-.animation__F{
-    display: flex;
-    position: relative;
-    width: 100%;
 
-    z-index: 10;
-}
-
-/* .wrap_L{
-    visibility: hidden;
-} */
